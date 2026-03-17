@@ -1,0 +1,1 @@
+- [ ] read about process.exit and etc
