@@ -1,1 +1,2 @@
 - [ ] read about process.exit and etc
+- [ ] complete patch routes in 02-routes.js
