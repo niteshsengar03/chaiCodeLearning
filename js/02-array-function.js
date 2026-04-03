@@ -29,6 +29,7 @@ function multiplykraurReturn(element) {
     return element * 2;
 }
 
+
 const newArray = arr.map(multiplykraurReturn);
 console.log(newArray);
 
@@ -94,4 +95,3 @@ console.log(ans1);
 
 
 // Gotch moment
-   
