@@ -16,3 +16,15 @@ console.log(Math.max(...bill));
 console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 //Bind
 
+function reportDelivery(location, status) {
+    return `${this.name} at ${location}: ${status}`;
+}
+
+const deliveryBoy = { name: "Ranveer" };
+
+console.log("Call: ", reportDelivery.call(deliveryBoy, "Lyari", "Ordered"));
+console.log("Apply: ", reportDelivery.apply(deliveryBoy, ["Mars", "Pick up"]));
+console.log("Bind: ", reportDelivery.bind(deliveryBoy, "Haridwar", "WHAT"));
+
+const bindReport = reportDelivery.bind(deliveryBoy);
+console.log(bindReport("Haridwar", "WHAT"));
